@@ -3,15 +3,12 @@
 This is a repo in which I am refreshing my React knowledge, staying up to date with React 18, and preparing for what's coming in React 19.
 
 ## Table of Contents
-
-- [React Refresh](#react-refresh)
-  - [Table of Contents](#table-of-contents)
-  - [What I have learned so far...](#what-i-have-learned-so-far)
-    - [New way to create a React app with Vite](#new-way-to-create-a-react-app-with-vite)
-    - [Changes in React-Router-Dom syntax](#changes-in-react-router-dom-syntax)
-    - [React Queary](#react-queary)
-    - [Try to avoid using useEffect as much as possible](#try-to-avoid-using-useeffect-as-much-as-possible)
-    - [Resources](#resources)
+- [What I have learned so far...](#what-i-have-learned-so-far)
+  - [New way to create a React app with Vite](#new-way-to-create-a-react-app-with-vite)
+  - [Changes in React-Router-Dom syntax](#changes-in-react-router-dom-syntax)
+  - [React Queary](#react-queary)
+  - [Try to avoid using useEffect as much as possible](#try-to-avoid-using-useeffect-as-much-as-possible)
+  - [Resources](#resources)
 
 ## What I have learned so far...
 
