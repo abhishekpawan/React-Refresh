@@ -31,3 +31,15 @@ export const addJob = async (newJob: IJobListing) => {
   });
   return;
 };
+
+// Update Job
+export const updateJob = async (updatedJob: IJobListing) => {
+  await fetch(`/api/jobs/${updatedJob.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(updatedJob),
+  });
+  return;
+}
