@@ -1,13 +1,15 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import { Outlet, useNavigation } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Spinner from "../components/Spinner";
 
 const MainLayout = () => {
+  const navigation = useNavigation();
   return (
     <>
-    <Navbar/>
-    <Outlet/>
+      <Navbar />
+      {navigation.state === "loading" ? <Spinner loading /> : <Outlet />}
     </>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
