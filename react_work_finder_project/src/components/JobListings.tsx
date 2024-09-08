@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import JobListing from "./JobListing";
 import Spinner from "./Spinner";
 
-interface Company {
+export interface Company {
   name: string;
   description: string;
   contactEmail: string;

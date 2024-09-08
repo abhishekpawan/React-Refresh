@@ -9,7 +9,8 @@ import MainLayout from "./layouts/MainLayout";
 import JobsPage from "./pages/JobsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import JobPage from "./pages/JobPage";
-import { jobLoader } from "./pages/JobPageFunctions";
+import { jobLoader } from "./utils/jobHandlers";
+import AddJobPage from "./pages/AddJobPage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:id" element={<JobPage />} loader={ ({params}) => jobLoader(params.id!)} />
+        <Route path="/add-job" element={<AddJobPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     )

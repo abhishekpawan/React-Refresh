@@ -1,7 +1,7 @@
 import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { IJobListing } from "../components/JobListings";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
-import { deleteJob } from "./JobPageFunctions";
+import { deleteJob } from "../utils/jobHandlers";
 import { toast } from "react-toastify";
 
 const JobPage = () => {
